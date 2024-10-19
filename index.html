@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prepaid Electricity Usage Tracker</title>
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Prepaid Electricity Usage Tracker</h1>
+
+        <!-- Balance Display -->
+        <div class="balance-display">
+            <h2>Current Balance: <span id="balance">0</span> kWh</h2>
+        </div>
+
+        <!-- Top-Up Section -->
+        <div class="form-section">
+            <h3>Top-Up Electricity</h3>
+            <input type="number" id="topUpAmount" placeholder="Enter top-up amount (kWh)">
+            <button id="topUpBtn">Add Top-Up</button>
+        </div>
+
+        <!-- Usage Section -->
+        <div class="form-section">
+            <h3>Log Electricity Usage</h3>
+            <input type="number" id="usageAmount" placeholder="Enter usage amount (kWh)">
+            <button id="usageBtn">Log Usage</button>
+        </div>
+
+        <!-- Usage History -->
+        <div class="history-section">
+            <h3>Usage History</h3>
+            <ul id="usageHistory"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
